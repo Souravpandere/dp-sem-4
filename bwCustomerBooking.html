@@ -35,11 +35,25 @@
         </div>
         <div class="PickupAndDrop"> <p  class="ServiceHeadings">Pickup and Drop </p>
             <img src="pickdrop.png" class="emergencyimg">
-         <botton class="bookButton"><a href="./bwPickupAndDrop.html">Book</a></botton></div>
+         <botton class="bookButton" onclick="pick()">Book</botton></div>
         <div class="PunctureFix"> <p  class="ServiceHeadings">Puncture Fix </p>
                <img src="puncturefix.png" class="emergencyimg">
-         <botton class="bookButton"><a href="bwpuncturefix.html">Book</a></botton></div>
+         <button class="bookButton" onclick="punct()">Book</button></div>
         <div class="PetrolDelivery"> <p  class="ServiceHeadings">Petrol Delivery</p>
                <img src="petroldelivery.png" class="emergencyimg">
-         <botton class="bookButton">Book</botton></div>
+         <botton class="bookButton" onclick="petrol()">Book</botton></div>
 </div>
+</section>
+<script>
+    function punct(){
+        window.location.replace("./bwpuncturefix.html");
+    }
+    function pick(){
+        window.location.replace("./bwPickupAndDrop.html");
+    }
+    function petrol(){
+        window.location.replace("./petroldelivery.html");
+    }
+</script>
+</body>
+</html>

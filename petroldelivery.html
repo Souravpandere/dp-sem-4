@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bwEmergency.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Project</title>
+  </head>
+  <body>
+    <section>
+      <div class="hbcontainer">
+        <div class="headbox">
+          <p class="br">Breakdown</p>
+          <br />
+          <p class="rec">Recovery</p>
+          <center>
+            <p class="breakwreck">BreakWreck.com</p>
+          </center>
+          <div class="links">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <div>
+              <form>
+                <label class="labelheading">Petrol Delivery </label><br />
+                <label class="type">Type of fuel </label>
+                <select name="vehicle" id="vehicle">
+                  <option value="Two wheeler">Petrol</option>
+                  <option value="Four wheeler">Diesel</option>
+                </select>
+
+                <label>Enter location</label>
+                <input type="text" />
+                <label class="Mobile number">Enter Mobile number</label>
+                <input style="color: black" type="number" />
+                <button class="btn1" onclick="alertt()">book</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+        function alertt(){
+            alert('Booking Successful!');
+        }
+    </script>
+  </body>
+</html>
