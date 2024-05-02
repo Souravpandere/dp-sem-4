@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bwIndex.css">
+    <link rel="stylesheet" href="./bwCustomerRegister.css">
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -27,16 +28,13 @@
 </div>
 </div>
 <div class="main">
-    <h1>BOOK YOUR MECH! </h1>
+    <h1>Get customers in no time ! </h1>
 </div>
-<form class="optionbox" > 
-  <p class="formlogin">  Who are you? </p>
- <button class="Customer-button"> <a style = "color: white; "href="./bwCustomerLogin.html"> Customer </a></button> 
- <button class="Mechanic-button"><a style = "color: white; "href="./bwMechReg.html"> Mechanic </a></button>
-
-</form>
-
-
-</section>
-</body>
-</html>
+<div class="login">
+    <form class="customerLoginform" action="connect.php" method="post">
+        <label class="formlogin">REGISTER</label>
+        <label class="us" > USERNAME</label> <input type="text" id="username" name="username">
+        <label class="pw" > PASSWORD</label> <input type="password" id="password" name="password">
+        <button class="submitButton"> <a href="./bwCustomerBooking.html" style="color:white;">SUBMIT </a> </button>
+        <p class="registerline">Already have an account? <a style="color:black;" href="./bwMechlogin.html"> Log in !</a></p>
+    </form>
