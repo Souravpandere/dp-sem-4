@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bwPickupAndDrop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Project</title>
+</head>
+<body >
+    <section>
+<div class="hbcontainer">
+    <div class="headbox" >
+    <p class="br">Breakdown</p><br><p class="rec">Recovery</p>
+        <center>
+        <p class="breakwreck">BreakWreck.com</p>
+            </center>
+    <div class="links">
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<form>
+    <label class="formPnD"> Pickup and Drop </label>
+    <label for="vehicle"class="type">Type of vehicle</label>
+    <select name="vehicle" id="vehicle">
+  <option value="Two wheeler">Two Wheeler</option>
+  <option value="Four wheeler">Four wheeler</option>
+ 
+</select>
+    <label class="date"> Select Pickup date</label>
+    <input class="input" type="date">
+    <label class="problem">Enter problem Specification</label>
+    <input type="text">
+    <label class=" Mobile number">Enter Mobile number</label>
+    <input style="color:black;" type="number" 
+    <label class="location">Enter location</label>
+
+     <button  onclick="getLocation()">Get location</button>
+
+      <p id="demo"></p>
+
+       <button class="btn1"onclick="alertt()">book</button>
+    </form>
+
+<script>
+   function alertt(){
+        alert('Booking Successful!');
+    }
+ 
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>

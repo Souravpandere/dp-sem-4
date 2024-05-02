@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hbcontainer{
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url('background.png');
+}
+.headbox{
+    position: absolute;
+    height: 73px;
+    width: 100%;
+    background-color: rgb(255, 115, 0);
+    margin-top: 0px;
+    padding: 0px;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: inline-block;
+
+    
+}
+.br{
+    color: black;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    margin: 0;
+    left: 20px;
+    letter-spacing: 3px;
+    bottom: 0;
+    top: 0;
+    
+}
+.rec{
+    color: white;
+    font-size: 27px;
+    font-family: 'Bebas Neue', sans-serif;
+    position: absolute;
+    left : 20px;
+    letter-spacing: 3px;
+    top: 25px;
+    font-weight: 600;
+    
+}
+.links{
+   float: right;
+   z-index: 100;
+   justify-content: space-evenly;
+   position: absolute;
+   margin-inline-start: 0;
+   top: 10px;
+    right: 3rem;
+}
+.links ul li{
+    background-color: transparent;
+    list-style: none;
+    display: inline-flex;
+    z-index: 100;
+    margin-left: 35px;
+    
+    
+    
+}
+.links ul li a{
+    color: white;
+    text-decoration: none;
+}
+.links ul li a:hover{
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+.breakwreck{
+    color:white;
+    font-size: 43px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 623px;
+    letter-spacing: 3px;
+    bottom: 0;
+    top: 0;
+}
+.main{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 122px;
+    margin-right: 38px;
+}
+.h2main{
+      text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 80px;
+    margin-right: 38px;
+    margin-left:592px;
+    background-color:rgb(255,115,0);
+    border-radius:45px;
+    padding : 15px 25px 15px 25px;
+    display:inline-block;
+}
+.services{
+    position : absolute;
+    justify-content:space-evenly;
+    margin-left: -70px;
+    margin-top:-70px;
+}
+.EmergencyBreakdown{
+    background-color: rgb(255,115,0);
+    position :  absolute;
+    margin-top:200px;
+    margin-left:200px;
+    height:290px;
+    width:270px;
+    display:inline-block;
+    border-radius:20px;
+    box-shadow:50px;
+    
+}
+.PickupAndDrop{
+    background-color: rgb(255,115,0);
+    color: white;
+    position :  absolute;
+    margin-top:200px;
+    margin-left:524px;
+    height:290px;
+    width:270px;
+    display:inline-block;
+     border-radius:20px;
+}
+.PunctureFix{
+    background-color: rgb(255,115,0);
+    position :  absolute;
+    margin-top:200px;
+    margin-left:853px;
+    height:290px;
+    width:270px;
+    display:inline-block;
+     border-radius:20px;
+}
+.PetrolDelivery{
+    background-color: rgb(255,115,0);
+    position :  absolute;
+    margin-top:200px;
+    margin-left:1200px;
+    height:290px;
+    width:270px;
+    display:inline-block;
+     border-radius:20px;
+}
+.ServiceHeadings{
+      text-align: center;
+    color: white;
+    font-family:fantasy;
+    font-size: 20px;
+    font-weight:600px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left:30px;
+}
+.emergencyimg{
+    position :  absolute;
+    margin-top:41px;
+    margin-left:0px;
+    height:212px;
+    width:270px;
+    display:inline-block;
+}
+.bookButton{
+     padding: 20px 118px;
+    background: black;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    border-radius: 20px;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 236px;
+    color: white;
+    font-size: 15px;
+    cursor:pointer;
+}
+.bookButton:hover{
+    background-color: rgb(255, 115, 0);
+    
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+}

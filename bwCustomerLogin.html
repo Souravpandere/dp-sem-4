@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bwCustomerLogin.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Project</title>
+  </head>
+  <body>
+    <section>
+      <div class="hbcontainer">
+        <div class="headbox">
+          <p class="br">Breakdown</p>
+          <br />
+          <p class="rec">Recovery</p>
+          <center>
+            <p class="breakwreck">BreakWreck.com</p>
+          </center>
+          <div class="links">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <h1>BOOK YOUR MECHY REAL QUICKY!</h1>
+      </div>
+      <div class="login">
+        <form class="customerLoginform" action="#" method="post">
+          <label class="formlogin">LOGIN</label>
+          <label class="us"> USERNAME</label>
+          <input type="text" id="username" name="username" />
+          <label class="pw"> PASSWORD</label>
+          <input type="password" id="password" name="password" />
+          <button class="submitButton" type="button" onclick="checkLogin()">
+            Submit
+          </button>
+          <p class="registerline">
+            New to the site?
+            <a style="color: black" href="./bwCustomerRegister.html">
+              Register!</a
+            >
+          </p>
+        </form>
+      </div>
+    </section>
+    <script>
+      let pass = ["1234", "1234", "1234"];
+      let username = ["sourav", "aditya", "mir"];
+      function checkLogin() {
+        let un = document.getElementById("username").value;
+        let p = document.getElementById("password").value;
+        console.log(un, p);
+        for (let i = 0; i < 3; i++) {
+          if (un == username[i] && p == pass[i]) {
+            alert("Welcome User ",username[i]);
+            console.log("Logged In");
+            window.location.replace("./bwCustomerBooking.html");
+            return;
+          }
+        }
+        alert("Invlaid Credentials")
+        return;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bwEmergency.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Project</title>
+</head>
+<body >
+    <section>
+<div class="hbcontainer">
+    <div class="headbox" >
+    <p class="br">Breakdown</p><br><p class="rec">Recovery</p>
+        <center>
+        <p class="breakwreck">BreakWreck.com</p>
+            </center>
+    <div class="links">
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+<div>
+    <form>
+        <label class="labelheading">Emergency booking</label><br>
+        <label class="type">Type of vehicle </label>
+        <select name="type" id="type" style="padding: 1rem;width: 25vw;border-radius: 1rem;;margin-left: 4vw;font-size: 1rem;">
+            <option value="twowheeler">Two Wheeler</option>
+            <option value="fourwheeler">Four Wheeler</option>
+        </select>
+        <label class="problem">Problem specification(if known)</label>
+        <input type=text>
+        
+        <input type="text" id="loc">
+        <button type="button" id="locbtn" onclick="getLocation()">Get Your Location</button>
+        <button onclick="alertt()" id="bookbtn">book</button>
+    </form>
+</div>
+<script>
+    const x = document.getElementById("loc");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.value = "Geolocation is not supported by this browser.";
+  }
+}
+    
+function showPosition(position) {
+    x.value="Latitude: " + position.coords.latitude + 
+    "\t Longitude: " + position.coords.longitude;
+}
+   function alertt(){
+        alert('Booking Successful!');
+    }
+</script>

@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hbcontainer{
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+     background-image: url('background.png');
+}
+
+.headbox{
+    position: absolute;
+    height: 73px;
+    width: 100%;
+    background-color: rgb(255, 115, 0);
+    margin-top: 0px;
+    padding: 0px;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: inline-block;
+
+    
+}
+.br{
+    color: black;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    margin: 0;
+    left: 20px;
+    letter-spacing: 3px;
+    bottom: 0;
+    top: 0;
+    
+}
+.rec{
+    color: white;
+    font-size: 27px;
+    font-family: 'Bebas Neue', sans-serif;
+    position: absolute;
+    left : 20px;
+    letter-spacing: 3px;
+    top: 25px;
+    font-weight: 600;
+    
+}
+.links{
+   float: right;
+   z-index: 100;
+   justify-content: space-evenly;
+   position: absolute;
+   margin-inline-start: 0;
+   top: 10px;
+    right: 3rem;
+}
+.links ul li{
+    background-color: transparent;
+    list-style: none;
+    display: inline-flex;
+    z-index: 100;
+    margin-left: 35px;
+    
+    
+    
+}
+.links ul li a{
+    color: white;
+    text-decoration: none;
+}
+.links ul li a:hover{
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+.breakwreck{
+    color:white;
+    font-size: 43px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 623px;
+    letter-spacing: 3px;
+    bottom: 0;
+    top: 0;
+}
+.main{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    margin-top: 122px;
+    margin-right: 38px;
+}
+form{
+      display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 115, 0);
+    box-shadow: 0px 8px 32px 0px black;
+    float: left;
+    width: 29rem;
+    height: 30rem;
+    border-radius: 20px;
+    position: absolute;
+    left: -700px;
+    top: 250px;
+}
+input{
+    width: 75%;
+    margin: 5% auto;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    
+    background: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+#locbtn{
+    padding: 20px 60px;
+   background: black;
+   
+   border-radius: 50px;
+   width: fit-content;
+   padding: 1.2rem;
+   margin-left: 9.5vw;
+   color: white;
+   font-size: 15px;
+}
+#bookbtn{
+     padding: 20px 60px;
+    background: black;
+    
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 139px;
+    margin-top: 408px;
+    color: white;
+    font-size: 15px;
+}
+button:hover{
+    background-color: rgb(255, 115, 0);
+    box-shadow: 0px 8px 32px 0px black;
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+}
+.labelheading{
+    text-align: center;
+    color: white;
+    font-family:fantasy;
+
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 55px;
+    font-size: 30px;
+    letter-spacing: 3px;
+
+}
+.type{
+    color: white;
+    padding : 5px;
+    margin-left: 3px;
+    margin-top: 70px;
+}
+.problem{
+    color:white;
+    padding:5px;
+    margin-left:3px;
+    margin-top:3px;
+    
+}

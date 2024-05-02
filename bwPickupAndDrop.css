@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hbcontainer{
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url('background.png');
+}
+.headbox{
+    position: absolute;
+    height: 73px;
+    width: 100%;
+    background-color: rgb(255,115,0);
+    margin-top: 0px;
+    padding: 0px;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: inline-block;
+
+    
+}
+.main{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 122px;
+    margin-right: 38px;
+}
+.links{
+   float: right;
+   z-index: 100;
+   justify-content: space-evenly;
+   position: absolute;
+   margin-inline-start: 0;
+   top: 10px;
+    right: 3rem;
+}
+.links ul li{
+    background-color: transparent;
+    list-style: none;
+    display: inline-flex;
+    z-index: 100;
+    margin-left: 35px;
+    
+    
+    
+}
+.links ul li a{
+    color: white;
+    text-decoration: none;
+}
+.links ul li a:hover{
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+.br{
+    color: black;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    margin: 0;
+    left: 20px;
+    letter-spacing: 3px;
+    bottom: 0;
+    top: 0;
+    
+}
+.rec{
+    color: white;
+    font-size: 27px;
+    font-family: 'Bebas Neue', sans-serif;
+    position: absolute;
+    left : 20px;
+    letter-spacing: 3px;
+    top: 25px;
+    
+}
+.breakwreck{
+    color:white;
+    font-size: 43px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 623px;
+    letter-spacing: 3px;
+    bottom: 0;
+    top: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 115, 0);
+    box-shadow: 0px 8px 32px 0px black;
+    float: left;
+    width: 29rem;
+    height: 25rem;
+    border-radius: 20px;
+    position: absolute;
+    left: 520px;
+    top: 237px;
+}
+.btn1{
+     padding: 20px 60px;
+    background: black;
+    
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 139px;
+    margin-top: 330px;
+    color: white;
+    font-size: 15px;
+}
+.btn1:hover{
+    background-color: rgb(255, 115, 0);
+    box-shadow: 0px 8px 32px 0px black;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.formPnD{
+    text-align: center;
+    color: white;
+    font-family:fantasy;
+
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 110px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.type{
+    color: white;
+    padding : 5px;
+    margin-left: 3px;
+    margin-top: 70px;
+}
+.date{
+    color:white;
+    padding:5px;
+    margin-left:3px;
+    margin-top:3px;
+    cursor:pointer;
+    
+}
+.problem{
+    color:white;
+    padding:5px;
+    margin-left:3px;
+    margin-top:3px;
+    
+}
+.location{
+
+    color:white;
+    padding:5px;
+    margin-left:3px;
+    margin-top:3px;
+    
+
+}
